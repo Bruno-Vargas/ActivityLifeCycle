@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="Desired League"
+        android:text="@string/desired_league"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +63,8 @@
             android:background="@drawable/swoosh_button_toggle"
             android:text="ToggleButton"
             android:textColor="#FFFFFF"
-            android:textOff="Mens"
-            android:textOn="Mens" />
+            android:textOff="@string/mens"
+            android:textOn="@string/mens" />
 
         <ToggleButton
             android:id="@+id/toggleButton2"
@@ -75,8 +75,8 @@
             android:background="@drawable/swoosh_button_toggle"
             android:text="ToggleButton"
             android:textColor="#FFFFFF"
-            android:textOff="Womens"
-            android:textOn="Womens" />
+            android:textOff="@string/womens"
+            android:textOn="@string/womens" />
 
         <ToggleButton
             android:id="@+id/toggleButton3"
@@ -85,8 +85,8 @@
             android:background="@drawable/swoosh_button_toggle"
             android:text="ToggleButton"
             android:textColor="#FFFFFF"
-            android:textOff="CO-ED"
-            android:textOn="CO-ED" />
+            android:textOff="@string/co_ed"
+            android:textOn="@string/co_ed" />
     </LinearLayout>
 
     <Button
@@ -98,7 +98,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
