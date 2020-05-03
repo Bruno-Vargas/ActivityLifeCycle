@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".League_activity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/welcomescreenbg" />
+        app:srcCompat="@drawable/desiredleaguebg" />
 
     <ImageView
         android:id="@+id/logo"
@@ -34,56 +33,72 @@
         app:srcCompat="@drawable/swooshlogo" />
 
     <TextView
-        android:id="@+id/goAllInText"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="GO ALL IN"
-        android:textColor="@color/colorAccent"
-        android:textSize="46sp"
+        android:text="Desired League"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="TextView"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/goAllInText"
-        app:layout_constraintStart_toStartOf="@+id/goAllInText"
-        app:layout_constraintTop_toBottomOf="@+id/goAllInText"
-        tools:text="ON GOING ALL OUT" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="252dp"
-        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
-        android:fontFamily="@font/montserrat"
-        android:text="Find a time in your city and dominate the league"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="289dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/swoosh_button_toggle"
+            android:text="ToggleButton"
+            android:textColor="#FFFFFF"
+            android:textOff="Mens"
+            android:textOn="Mens" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/swoosh_button_toggle"
+            android:text="ToggleButton"
+            android:textColor="#FFFFFF"
+            android:textOff="Womens"
+            android:textOn="Womens" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swoosh_button_toggle"
+            android:text="ToggleButton"
+            android:textColor="#FFFFFF"
+            android:textOff="CO-ED"
+            android:textOn="CO-ED" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button2"
         android:layout_width="0dp"
-        android:layout_height="51dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="GET STARTED"
+        android:text="Next"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
