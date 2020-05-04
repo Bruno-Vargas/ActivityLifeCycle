@@ -1,12 +1,12 @@
-package versignassi.com.swoosh
+package versignassi.com.swoosh.Controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_league_activity.*
-import java.nio.file.attribute.AclFileAttributeView
+import versignassi.com.swoosh.EXTRA_LEAGUE
+import versignassi.com.swoosh.R
 
 class League_activity : BaseActivity() {
 

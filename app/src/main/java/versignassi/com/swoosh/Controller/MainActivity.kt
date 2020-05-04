@@ -1,9 +1,9 @@
-package versignassi.com.swoosh
+package versignassi.com.swoosh.Controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import versignassi.com.swoosh.R
 
 class MainActivity : BaseActivity() {
 
