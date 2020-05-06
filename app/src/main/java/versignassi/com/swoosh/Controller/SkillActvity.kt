@@ -15,6 +15,6 @@ class SkillActvity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill_actvity)
         player = intent.getParcelableExtra(EXTRA_PLAYER)
-        println(player.skill)
+        println("Player: " + player.skill)
     }
 }
